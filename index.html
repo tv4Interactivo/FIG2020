@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FIG2020 en Tv4 Niños</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    
+    <script src="/script.js" defer></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body>
+    <div style="position:relative;">
+      <a-scene renderer="antialias:true; colorManagement:true">
+        <!-- Lista de assets 3D -->
+      <a-assets>
+        <img
+          id="sky"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fsky.jpg?v=1592856758577"
+        />
+        <img
+          id="flama"
+          src="https://cdn.glitch.com/97c36348-2b4a-4bc3-be51-b4860a050859%2Fflama.png?v=1599523663587"
+        />
+        <a-asset-item
+          id="prin"
+          src="https://cdn.glitch.com/97c36348-2b4a-4bc3-be51-b4860a050859%2Fglobo_prin4.gltf?v=1599525097329"
+        ></a-asset-item>
+        <a-asset-item
+          id="burger"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2FAnyConv.com__new_hamburguesa.glb?v=1593900274353"
+        ></a-asset-item>
+        <a-asset-item
+          id="tetera"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Ftetera.glb?v=1594150545974"
+        ></a-asset-item>
+        <a-asset-item
+          id="ufo"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fnew_ufo.glb?v=1593633272358"
+        ></a-asset-item>
+        <a-asset-item
+          id="globo_amarillo"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fglobo_amarillo.glb?v=1593040959190"
+        ></a-asset-item>
+        <a-asset-item
+          id="globo_happy"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fglobo_happy.glb?v=1593040959100"
+        ></a-asset-item>
+        <a-asset-item
+          id="betito"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fbetito_last.glb?v=1594750973002"
+        ></a-asset-item>
+        <a-asset-item
+          id="robot"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fnew_robot.glb?v=1593642199407"
+        ></a-asset-item>
+        <a-asset-item
+          id="pato"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2FAnyConv.com__GloboPato8%20(1).glb?v=1594748453828"
+        ></a-asset-item>
+        <a-asset-item
+          id="tortuga"
+          src="https://cdn.glitch.com/8cef1fb7-565f-48e7-a091-10b7e2cf2e34%2Fnew_tortuga.glb?v=1594238069384"
+        ></a-asset-item>
+        <a-asset-item
+          id="tv4"
+          src="https://cdn.glitch.com/97c36348-2b4a-4bc3-be51-b4860a050859%2Ftv4.gltf?v=1599158523006"
+        ></a-asset-item>
+        <a-asset-item
+          id="colors"
+          src="https://cdn.glitch.com/97c36348-2b4a-4bc3-be51-b4860a050859%2Fcolors.gltf?v=1599164042744"
+        ></a-asset-item>
+
+        <audio
+          id="kalimba"
+          src="https://cdn.glitch.com/aa17dfcd-7626-46c7-8bf6-865647554368%2Fmusica_ninos.mp3?v=1604084718017"
+          preload="auto"
+        ></audio>
+        
+      </a-assets>
+      <!-- Lista de assets 3D -->
+
+      <a-sky src="#sky"></a-sky>
+        
+        <a-text
+        font="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR-msdf.json?v=1592879521419"
+        font-image="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR.png?v=1592879513081"
+        value="N"
+        scale="0.4 0.4 1"
+        position="-0.02 1.147 -0.5"
+        rotation="-45 0 0"
+        color="#274363"
+        negate="false"
+        >
+        </a-text>
+        
+        <a-text
+        font="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR-msdf.json?v=1592879521419"
+        font-image="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR.png?v=1592879513081"
+        value="S"
+        scale="0.4 0.4 1"
+        position="0.02 1.147 0.5"
+        rotation="-45 180 0"
+        color="#274363"
+        negate="false"
+        >
+        </a-text>
+        
+        <a-text
+        font="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR-msdf.json?v=1592879521419"
+        font-image="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR.png?v=1592879513081"
+        value="E"
+        scale="0.4 0.4 1"
+        position="0.479 1.147 -0.02"
+        rotation="-45 -90 0"
+        color="#274363"
+        negate="false"
+        >
+        </a-text>
+        
+        <a-text
+        font="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR-msdf.json?v=1592879521419"
+        font-image="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR.png?v=1592879513081"
+        value="O"
+        scale="0.4 0.4 1"
+        position="-0.479 1.147 0.02"
+        rotation="-45 90 0"
+        color="#274363"
+        negate="false"
+        >
+        </a-text>
+
+      <a-sound
+        id="musica"
+        src="#kalimba"
+        loop="true"
+        position="0 2 5"
+        volume="0.5"
+      ></a-sound>
+
+      <a-entity
+        position="0 3.4 0"
+        particle-system="maxAge:0.2; particleCount:10;
+                         velocityValue:0 20 0;
+                         accelerationValue:0 -50 0;
+                         opacity:0.5;
+                         color:#ffffff,#c4c4c4;
+                         size:1;
+                         texture:https://cdn.glitch.com/97c36348-2b4a-4bc3-be51-b4860a050859%2Fflama.png?v=1599523663587"
+      ></a-entity>
+
+      <!-- Principal -->
+      <a-entity>
+        <a-gltf-model
+          shadow="receive: false"
+          gltf-model="#prin"
+          scale="0.2 0.2 0.2"
+          position="0 0.6 0"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Principal -->
+
+      <!-- Hamburguesa -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:300000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#burger"
+          scale="0.4 0.4 0.4"
+          position="0 1.5 -5"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Hamburguesa -->
+
+      <!-- Tetera -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:400000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#tetera"
+          scale="0.6 0.6 0.6"
+          position="0 1.7 6"
+          animation__rotation="property: rotation; to:0 -360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Tetera -->
+        
+        
+        
+        
+        
+      <!-- /////////////////////////// AQUÍ ESTÁN LOS 4 GLOBOS UFO /////////////////////////// -->  
+
+      <!-- UFO 1 -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:300000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#ufo"
+          scale="0.09 0.09 0.09"
+          position="7 0 0"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- UFO 1 -->
+        
+        <!-- UFO 2 -->
+      <a-entity
+        animation="property: rotation; to:0 -360 0; dur:300000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#ufo"
+          scale="0.09 0.09 0.09"
+          position="-15 -2 0"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- UFO 2 -->
+        
+        <!-- UFO 3 -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:300000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#ufo"
+          scale="0.15 0.15 0.15"
+          position="-1 -5 8"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- UFO 3 -->
+        
+        <!-- UFO 4-->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:300000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#ufo"
+          scale="0.09 0.09 0.09"
+          position="1 7 -8"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- UFO  4 -->
+        
+        <!-- UFO 5-->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:500000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#ufo"
+          scale="0.09 0.09 0.09"
+          position="-15 6 15"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- UFO  5 -->
+        
+        
+        
+        
+         <!-- /////////////////////////// AQUÍ ESTÁN LOS 4 GLOBOS UFO /////////////////////////// -->
+        
+        
+        
+        
+        
+
+      <!-- Globo amarillo -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:600000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#globo_amarillo"
+          scale="0.5 0.5 0.5"
+          position="-8 0 0"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Globo amarillo -->
+
+      <!-- Globo happy -->
+      <a-entity
+        animation="property: rotation; to:0 -360 0; dur:1000000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#globo_happy"
+          scale="0.7 0.7 0.7"
+          position="9 6 -9"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Globo happy -->
+
+      <!-- Betito -->
+      <a-entity
+        animation="property: rotation; to:0 -360 0; dur:600000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#betito"
+          scale="0.5 0.5 0.5"
+          position="-10 -4 -10"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Betito -->
+
+      <!-- Robot -->
+      <a-entity
+        animation="property: rotation; to:0 -360 0; dur:700000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#robot"
+          scale="0.3 0.3 0.3"
+          position="-11 -4 11"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Robot -->
+        
+        <!-- Robot2 -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:700000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#robot"
+          scale="0.5 0.5 0.5"
+          position="11 4 5"
+          animation__rotation="property: rotation; to:0 -360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Robot2 -->
+
+      <!-- Pato -->
+      <a-entity
+        animation="property: rotation; to:0 -360 0; dur:500000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#pato"
+          scale="1 1 1"
+          position="12 -2 12"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Pato -->
+
+      <!-- Tortuga -->
+      <a-entity
+        animation="property: rotation; to:0 -360 0; dur:2000000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#tortuga"
+          scale="0.3 0.3 0.3"
+          position="0 -3 13"
+          animation__rotation="property: rotation; to:0 360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Tortuga -->
+
+      <!-- Tv4 -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:300000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#tv4"
+          scale="0.15 0.15 0.15"
+          position="5 1.8 -5"
+          animation__rotation="property: rotation; to:0 -360 0; loop: true; dur: 90000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Tv4 -->
+
+      <!-- Colors -->
+      <a-entity
+        animation="property: rotation; to:0 360 0; dur:1000000; loop: true; easing: linear"
+      >
+        <a-gltf-model
+          shadow="receive: true"
+          gltf-model="#colors"
+          scale="0.04 0.04 0.04"
+          position="-4 -1 15"
+          animation__rotation="property: rotation; to:0 -360 0; loop: true; dur: 170000; easing: linear;"
+        >
+        </a-gltf-model>
+      </a-entity>
+      <!-- Colors -->
+
+      <a-camera rotation-reader> </a-camera>
+        
+        
+        
+      </a-scene>
+      <div style="position:absolute; top:10px; left:10px; z-index:0;">
+      <a href="https://www.facebook.com/ciudadkaboom/">
+        <img
+          class="logo"
+          src="https://cdn.glitch.com/aa17dfcd-7626-46c7-8bf6-865647554368%2FLOGO%20NI%C3%91OS%20small3.png?v=1603817262392"
+        /></a>
+        </div>
+      
+      <div>
+             
+        </div>
+
+      <div style="position:absolute; top:5px; right:5px; z-index:1000;">
+        <button id="myBtn" class="button button1">Instrucciones</button>
+      </div>
+      
+      <div>
+        <input onclick="playAudio()" class="audio" type="image" src="https://cdn.glitch.com/aa17dfcd-7626-46c7-8bf6-865647554368%2Fsonido_VERDE.png?v=1604085546359"/>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="pregunta">Gira a tu alrededor para ver todos los globos y cuenta cuántos globos de <strong>OVNI</strong> hay.<br/><br/>
+            Cuando tengas tu respuesta, escribe tus datos y haz click en <strong>Enviar.</strong></p>
+          
+          
+          
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='https://fig2020-tv4ninos.glitch.me/received.html';}"></iframe>
+          
+          <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSehKY9L-x-Jgmbv7r1ufII1xTjmgJw90AGIJAPvc_UOAJ6Lgg/formResponse"
+                method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+            <label class="field" for="fname">Nombre del niño o niña:</label><br />
+            <input type="text" id="fname" tabindex="1" requiered name="entry.1169165129" /><br />
+            <label class="field" for="lname">Apellidos:</label><br />
+            <input type="text" id="lname" tabindex="2" requiered name="entry.146947886"/><br />
+            <label class="field" for="ciudad">Ciudad:</label><br />
+            <input type="text" id="ciudad" tabindex="3" requiered name="entry.875772148"/><br /><br />
+            <label class="field" for="respuesta">Respuesta:</label><br />
+            <input type="text" id="respuesta" tabindex="4" requiered name="entry.2111804202"/><br />
+            <label class="field" for="contacto">E-mail de contacto:</label><br />
+            <input type="text" id="contacto" tabindex="5" requiered name="entry.1964100552"/><br />
+            
+            <p class="field">*Nos comunicaremos al e-mail de contacto en caso de resultar ganador(a).</p>
+            
+            <button class="button button2" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
