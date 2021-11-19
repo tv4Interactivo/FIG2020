@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y5Q5NRCGY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0Y5Q5NRCGY');
-</script>
-    
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,11 +8,11 @@
     <title>FIG2020 en Tv4 Niños</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     
-    <script src="script.js" defer></script>
+    <script src="/script.js" defer></script>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
   </head>
@@ -98,7 +87,7 @@
       </a-assets>
       <!-- Lista de assets 3D -->
 
-      <a-sky src="#sky"></a-sky>
+      <a-sky color="#42bcf5" ></a-sky>
         
         <a-text
         font="https://cdn.glitch.com/0dd49b50-d63d-40b2-bfb7-a35166dda3f4%2FPERO-REGULAR-msdf.json?v=1592879521419"
@@ -471,12 +460,12 @@
           
           
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-    onload="if(submitted) {window.location='https://tv4interactivo.github.io/FIG2020/received.html';}"></iframe>
+    onload="if(submitted) {window.location='https://fig2020-tv4ninos.glitch.me/received.html';}"></iframe>
           
           <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSehKY9L-x-Jgmbv7r1ufII1xTjmgJw90AGIJAPvc_UOAJ6Lgg/formResponse"
                 method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
             <label class="field" for="fname">Nombre del niño o niña:</label><br />
-            <input type="text" id="fname" tabindex="1" required name="entry.1169165129" /><br />
+            <input type="text" id="fname" tabindex="1" required name="entry.1169165129"/><br />
             <label class="field" for="lname">Apellidos:</label><br />
             <input type="text" id="lname" tabindex="2" required name="entry.146947886"/><br />
             <label class="field" for="ciudad">Ciudad:</label><br />
@@ -487,6 +476,7 @@
             <input type="text" id="contacto" tabindex="5" required name="entry.1964100552"/><br />
             
             <p class="field">*Nos comunicaremos al e-mail de contacto en caso de resultar ganador(a).</p>
+            <p class="field">*Sólo para menores de edad.</p>
             
             <button class="button button2" type="submit">Enviar</button>
           </form>
